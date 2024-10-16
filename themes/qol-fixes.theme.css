@@ -1,0 +1,21 @@
+/**
+* @name Quality-of-Life Fixes
+* @author Lunatic
+* @description Fixes a ton of Stupid things in Discord. Include it in your themes if you like <3
+* @version 1.0
+*/
+
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Discord for some arbitary reason sets it's titlebar margin to 4px instead of 0px.
+* In Linux, this is mostly not an issue since the titlebars are often handled by the respective Desktop Environment,
+* But in Windows (No idea about MacOS?), this can get annoying since it breaks the window dragging when trying to drag from the first 4 pixels of the title bar.
+*/
+.withFrame_a934d8 {
+    margin-top: 0; /* Move the margin up to 0 again */
+    height: 22px; /* Modify the height, since it is now 4px less */
+}
+
+.winButton_a934d8 {
+    top: 0; /* Do the same for the minimize/maximize/close buttons */
+}
